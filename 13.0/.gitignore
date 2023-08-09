@@ -11,5 +11,6 @@
 /.db/
 /odoo/my_project_name.egg-info/
 /odoo/repo.yaml
+/odoo/backup/
 
 /pip-selfcheck.json
