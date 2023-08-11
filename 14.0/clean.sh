@@ -8,5 +8,5 @@ read -p "Do you want to remove odoo build? (y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    sudo rm -rf odoo/backup odoo/external-src odoo/links odoo/my_project_name.egg-info odoo/src odoo/repo.yml
+    sudo rm -rf odoo/backup odoo/external-src odoo/links odoo/my_project_name.egg-info odoo/src odoo/repo.yaml
 fi

@@ -7,7 +7,7 @@ services:
       - POSTGRES_PASSWORD=odoo
     image: postgres:13-alpine
     networks:
-          - local
+      - local
     volumes:
       - .db/:/var/lib/postgresql/data
       - ./migr-postgresql.conf:/etc/postgresql/postgresql.conf
@@ -20,7 +20,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=odoo
     networks:
-          - local
+      - local
   odoo:
     build: odoo
     environment:
@@ -63,8 +63,8 @@ services:
       - "docky.user=odoo"
       - "docky.main.service=true"
     networks:
-          - local
-          - traefik
+      - local
+      - traefik
 
 networks:
   traefik:
